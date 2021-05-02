@@ -20,6 +20,7 @@ public class RoomController : MonoBehaviour
         game = FindObjectOfType<GameController>();
 
         generator = FindObjectOfType<LevelGenerator>();
+        generator.previousRoomDirection = roomDirection;
     }
 
     // Update is called once per frame
